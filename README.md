@@ -5,5 +5,5 @@ Check it out here:
 [My Favorite Git Commands](https://mviolet.github.io/favorite-git-commands/ "Click to see my nifty site")
 
 ## Collaborators on this project:
-+[mViolet](https://www.github.com/mViolet)
++ [mViolet](https://www.github.com/mViolet)
 
