@@ -1,2 +1,2 @@
 # test-site
-Just a test site hahaha
+This exists solely for the purpose of practicing git!
