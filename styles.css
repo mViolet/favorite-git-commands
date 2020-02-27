@@ -1,0 +1,54 @@
+:root {
+	--paper: #fdfdf5;  /*custom colors*/
+	--pencil: #333333;
+	--green: #3cb371;
+	--purple: #820BBB;
+	--bpurple: #aa00ff;
+}
+
+
+* {
+	color: var(--pencil);
+	background-color: var(--paper);
+	font-family: "Roboto";
+}
+
+code {
+	font-family: "Roboto Mono";
+}
+
+dt, dd {
+	padding: 5px 50px 5px 50px;
+}
+
+dd {
+	padding-bottom: 20px;
+}
+
+.links {
+	padding-bottom: 10px;
+}
+
+dt:first-of-type {
+	padding-top: 30px;
+}
+
+dd:last-of-type {
+	padding-bottom: 30px;
+}
+
+dd code, .links code {
+	font-size: .7em;
+	font-weight: bold;
+	background: var(--green);
+	color: white;
+}
+
+a:active, a:visited {
+	color: var(--purple);
+}
+
+a:hover, a:focus {
+	color: var(--bpurple);
+}
+
