@@ -7,4 +7,5 @@ Check it out here:
 ## Collaborators on this project:
 + [mViolet](https://www.github.com/mViolet)
 
-<!-- to add yourself, insert a new line above & copy/paste "+ [username](https://www.github.com/username)" and replace 'username' with your gitHub username!  -->
+<!-- to add yourself, insert a new line above & copy/paste the following without quotes: "+ [username](https://www.github.com/username)"
+ then replace 'username' with your gitHub username!  ('u') -->
