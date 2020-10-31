@@ -14,52 +14,47 @@
 </head>
 <body class="main">
 
-<div class="content">
-<h1>My Favorite Git Commands</h1>
-<h2>Welcome!</h2>
-<p>So, you've decided to venture into the wonderful world of Git. A good place to start is getting familiar with some of the commands you'll be using. Here's a list of some of my favorites &mdash; may they help you in your journey of becoming a Git master. Happy coding!</p>
+<section class="content">
+	<h1>My Favorite Git Commands</h1>
+	<h2>Welcome!</h2>
+	<p>So, you've decided to venture into the wonderful world of Git. A good place to start is getting familiar with some of the commands you'll be using. Here's a list of some of my favorites &mdash; may they help you in your journey of becoming a Git master. Happy coding!</p>
+	
+	<!-- <h2>Common git commands</h2> -->
+	<dl>
+	
+		<dt><code>git status</code></dt>
+		<dd>checks the status of your local files (within your working directory). Have you changed any files? Are they staged? Which files are being tracked? git status will tell you.</dd>
+	
+		<dt><code>git pull</code></dt>
+		<dd>This command will "pull" the most updated copy of the remote files (for instance, ones that live on a GitHub server), and update your local copy, on your local branch. Yay! It also updates the remote tracking branches for all other branches.</dd>
+	
+		<dt><code>git push</code></dt>
+		<dd>Already committed your changes? All your files are staged and ready to be pushed to the remote working branch/repository? This is the command you use.</dd>
+	
+		<dt><code>git reflog</code></dt>
+		<dd>On noooo! You made a mistake! You didn't mean to make that commit! No worries... <code>git reflog</code> ("reflog" stands for reference log), will show you a list of updates you made in your local repository, and the unique identifiers (called a SHA or "hash", and usually containing 7 characters for smaller projects) for each one. This way you can restore your local files to a previous state using <code>git checkout -b &lt;branch&gt; &lt;sha&gt;</code>.</dd>
+	
+		<dt><code>git remote -v</code></dt>
+		<dd>Shows you the URLs that are being used for both <code>git fetch</code> and <code>git push</code>. You'll usually see fetch and push locations for "origin". This is just the name that Git gives to server that you cloned your repository from.</dd>
+	
+		<dt><code>git branch &lt;name-of-branch&gt;</code></dt>
+		<dd>Need to create a new branch to use for your coding experiments? This is the command for you. Be sure to replace <code>&lt;name-of-branch&gt;</code> with a descriptive name for the branch you will be working on</dd>
+	
+		<dt><code>git checkout &lt;name-of-branch&gt;</code></dt>
+		<dd>Once you create a new branch, You will need to "check it out" so you can work on it. Be sure to replace <code>&lt;name-of-branch&gt;</code> with the name of the branch you want to work on.</dd>
+	
+		<dt><code>git branch -d &lt;name-of-branch&gt;</code></dt>
+		<dd>Once you're finished working on a branch you created, you'll probably want to delete it. Replace <code>&lt;name-of-branch&gt;</code>with the name of the branch you want to delete. Note that this command returns a unique ID called a SHA or "hash" - assurance that you'll be able to restore that branch in case you ever need to.</dd>
+	
+	
+	</dl>
+	
+	<h2>Useful links</h2>
+	<p class="links"><a href="https://longair.net/blog/2009/04/16/git-fetch-and-merge/">"GIT: FETCH AND MERGE, DON’T PULL"</a>, an article by 'mark'. Contains a really good description of branches, and how <code>git merge</code> and <code>git fetch</code> work.</p>
+	
+	<p class="links"><a href="https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/">How to Undo Almost Anything With Git</a>, by Joshua Wehner on the GitHub Blog</p>
+	
+</section> <!-- end content -->
 
-<!-- <h2>Common git commands</h2> -->
-<dl>
-
-	<dt><code>git status</code></dt>
-	<dd>checks the status of your local files (within your working directory). Have you changed any files? Are they staged? Which files are being tracked? git status will tell you.</dd>
-
-	<dt><code>git pull</code></dt>
-	<dd>This command will "pull" the most updated copy of the remote files (for instance, ones that live on a GitHub server), and update your local copy, on your local branch. Yay! It also updates the remote tracking branches for all other branches.</dd>
-
-	<dt><code>git push</code></dt>
-	<dd>Already committed your changes? All your files are staged and ready to be pushed to the remote working branch/repository? This is the command you use.</dd>
-
-	<dt><code>git reflog</code></dt>
-	<dd>On noooo! You made a mistake! You didn't mean to make that commit! No worries... <code>git reflog</code> ("reflog" stands for reference log), will show you a list of updates you made in your local repository, and the unique identifiers (called a SHA or "hash", and usually containing 7 characters for smaller projects) for each one. This way you can restore your local files to a previous state using <code>git checkout -b &lt;branch&gt; &lt;sha&gt;</code>.</dd>
-
-	<dt><code>git remote -v</code></dt>
-	<dd>Shows you the URLs that are being used for both <code>git fetch</code> and <code>git push</code>. You'll usually see fetch and push locations for "origin". This is just the name that Git gives to server that you cloned your repository from.</dd>
-
-	<dt><code>git branch &lt;name-of-branch&gt;</code></dt>
-	<dd>Need to create a new branch to use for your coding experiments? This is the command for you. Be sure to replace <code>&lt;name-of-branch&gt;</code> with a descriptive name for the branch you will be working on</dd>
-
-	<dt><code>git checkout &lt;name-of-branch&gt;</code></dt>
-	<dd>Once you create a new branch, You will need to "check it out" so you can work on it. Be sure to replace <code>&lt;name-of-branch&gt;</code> with the name of the branch you want to work on.</dd>
-
-	<dt><code>git branch -d &lt;name-of-branch&gt;</code></dt>
-	<dd>Once you're finished working on a branch you created, you'll probably want to delete it. Replace <code>&lt;name-of-branch&gt;</code> with the name of the branch you want to delete. Note that this command returns a unique ID called a SHA or "hash" - assurance that you'll be able to restore that branch in case you ever need to.</dd>
-
-
-</dl>
-
-<h2>Useful links</h2>
-<div class="links"><a href="https://longair.net/blog/2009/04/16/git-fetch-and-merge/">"GIT: FETCH AND MERGE, DON’T PULL"</a>, an article by 'mark'. Contains a really good description of branches, and how <code>git merge</code> and <code>git fetch</code> work.</div>
-
-<div class="links"><a href="https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/">How to Undo Almost Anything With Git</a>, by Joshua Wehner on the GitHub Blog</div>
-
-<div class="links"><a href=""></a></div>
-
-<div class="links"><a href=""></a></div>
- 
- <div class="links"><a href=""></a></div>
-
-</div> <!-- end content -->
 </body>
 </html>
